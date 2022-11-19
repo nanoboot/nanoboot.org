@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>nanoboot.org</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+<iframe src="title.html" width="100%" height="50px" frameborder="0"></iframe>
+<hr>
+<iframe src="menu.html" width="100%" height="35px" frameborder="0"></iframe>
+<hr>
+
+
+
+<span id="title">Standardization</span>
+<hr>
+<p>This page describes, how to create Nanoboot software based on Nanoboot software standards</p>
+<h2>Licences</h2>
+
+<ul>
+
+<li>Place text file named LICENCE into the root directory of the software Git repository.</li>
+
+<li>Insert LICENCE text from one of these:
+<ul>
+
+<li><a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt">https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt</a></li>
+<li><a href="https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt">https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt</a></li>
+</ul>
+</li>
+
+</ul>
+<h2>Licence preamble in Java file</h2>
+<pre>
+///////////////////////////////////////////////////////////////////////////////////////////////
+// {SOFTWARE CODE}: {SOFTWARE DECRIPTION}.
+// Copyright (C) {FROM YEAR}-{UNTIL YEAR} the original author or authors.
+//
+// This library is free software; you can redistribute it and/or
+// modify it under the terms of the GNU Lesser General Public
+// License as published by the Free Software Foundation; 
+// version 2.1 of the License only.
+//
+// This library is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+// Lesser General Public License for more details.
+//
+// You should have received a copy of the GNU Lesser General Public
+// License along with this library; if not, write to the Free Software
+// Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+///////////////////////////////////////////////////////////////////////////////////////////////
+</pre>
+<pre>
+///////////////////////////////////////////////////////////////////////////////////////////////
+//{SOFTWARE CODE}: {SOFTWARE DECRIPTION}.
+// Copyright (C) {FROM YEAR}-{UNTIL YEAR} the original author or authors.
+//
+//This program is free software; you can redistribute it and/or
+//modify it under the terms of the GNU General Public License
+//as published by the Free Software Foundation; version 2
+//of the License only.
+//
+//This program is distributed in the hope that it will be useful,
+//but WITHOUT ANY WARRANTY; without even the implied warranty of
+//MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//GNU General Public License for more details.
+//
+//You should have received a copy of the GNU General Public License
+//along with this program; if not, write to the Free Software
+//Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+///////////////////////////////////////////////////////////////////////////////////////////////
+</pre>
+<h2>Licence preamble in XML file</h2>
+<b>Note:</b> Starts with &lt;!-- and ends with --&gt;
+<pre>
+
+ {SOFTWARE CODE}: {SOFTWARE DECRIPTION}.
+ Copyright (C) {FROM YEAR}-{UNTIL YEAR} the original author or authors.
+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; 
+ version 2.1 of the License only.
+
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+</pre>
+<pre>
+
+ {SOFTWARE CODE}: {SOFTWARE DECRIPTION}.
+ Copyright (C) {FROM YEAR}-{UNTIL YEAR} the original author or authors.
+
+ This program is free software; you can redistribute it and/or
+ modify it under the terms of the GNU General Public License
+ as published by the Free Software Foundation; version 2
+ of the License only.
+ 
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ 
+ You should have received a copy of the GNU General Public License
+ along with this program; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+
+</pre>
+<h2>Place file .gitignore into the root of the repository</h2>
+<h2>Place file CHANGELOG.md into the root of the repository</h2>
+<h2>Place file ENVIRONMENT_STARTUP.md into the root of the repository</h2>
+<h2>Place file README.md into the root of the repository</h2>
+<h2>File CREDITS (example)</h2>
+<pre>
+	This file partially lists people, that have contributed to 
+	the "{SOFTWARE NAME}" project. They are sorted by name.
+	The fields are: name (N), e-mail (E), web-address (W), 
+	PGP key ID and fingerprint (P), description (D) and 
+	snail-mail address (S).
+	Thanks,
+
+			Vokac
+----------
+
+N: Robert Vokac
+E: robertvokac@nanoboot.org
+W: https://nanoboot.org
+P: 4096R/E3329055 322B D109 0AA8 C324 EA9C 72F5 693D 30BE E332 9055
+D: Founder
+S: Czech Republic
+
+</pre>
+<h2>File CONTRIBUTING.md </h2>
+<h2>File CODEOWNERS </h2>
+<hr>
+
+<iframe src="footer-by-nc-sa.html" width="100%" height="125px" frameborder="0"></iframe>
+</body>
+
+</html>
+
