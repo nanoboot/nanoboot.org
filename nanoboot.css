@@ -42,15 +42,37 @@ content: "URL: ";
 margin-top: 20px;
 margin-bottom: 20px;
 }
-x-star {
-background-image: url(images/star.png);
+x-star {background-image: url(images/star.png);}
+x-star05 {background-image: url(images/star05.png);}
+x-star0 {background-image: url(images/star0.png);}
+x-star, x-star05, x-star0 {
 background-repeat: no-repeat;
 background-size: 100% 100%;
 margin-left:5px;
 }
+
 x-star::before {
 content:"___";
 color:white;
+}
+x-star05::before {
+content:"___";
+color:white;
+}
+x-star0::before {
+content:"___";
+color:white;
+}
+x-note::before {
+content:"( ";
+color:grey;
+}
+x-note::after {
+content:" )";
+color:grey;
+}
+x-note {
+color:grey;
 }
 
 .encyclopedia_article h2 {
@@ -77,3 +99,4 @@ padding:10px;
 font-size:120%;
 letter-spacing:1px;
 }
+.gold {background-color:yellow;}

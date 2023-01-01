@@ -8,6 +8,11 @@
 <link rel="stylesheet" type="text/css" href="nanoboot.css">
 <script src="nanoboot.js"></script>
 
+<style type="text/css">
+table {border-collapse: collapse;}
+th,td {border:1px solid black; padding:5px;}
+</style>
+
 </head>
 
 <body onload="init()">
@@ -18,6 +23,7 @@
 <span id="title">Encyclopedia</span>
 <hr>
 
+<!--
 <b>Example:</b><br>
 <textarea rows="5" cols="60">
 <article class="encyclopedia_article">
@@ -26,40 +32,63 @@
 <span class="url">URL</span>
 </article>
 </textarea>
+-->
 
 
+<table>
+<tr><th>Name</th><th>Category</th><th>Stars</th><th>Description</th><th>Url</th></tr>
 
-<h1 class="encyclopedia_h1">E</h1>
+<tr><td>Eclipse</td><td>Integrated desktop environments (IDEs)</td><td><x-star05></x-star05></td><td></td><td></td></tr>
 
-<article class="encyclopedia_article">
-<h2>Eclipse</h2>
-<span class="category">Integrated desktop environment (IDE)</span>
-</article>
+<tr><td>IntelliJ Idea</td><td>Integrated desktop environments (IDEs)</td><td><x-star05></x-star05></td><td></td><td></td></tr>
+<tr><td><a href="encyclopedia/Java.html">Java</a></td><td>Programming languages</td><td> <x-star></x-star><x-star></x-star><x-star></x-star><x-star></x-star><x-star></x-star> </td><td></td><td></td></tr>
 
+<tr><td>MapStruct</td><td>Java libraries</td><td> <x-star></x-star> </td><td></td><td>https://mapstruct.org/</td></tr>
+<tr><td class="gold">Netbeans</td><td>Integrated desktop environments (IDEs)</td><td> <x-star></x-star><x-star></x-star><x-star></x-star><x-star></x-star> </td><td></td><td></td></tr>
+<tr><td>Tomcat</td><td>Java web application servers</td><td> <x-star></x-star><x-star></x-star> </td><td></td><td></td></tr>
 
-
-<h1 class="encyclopedia_h1">I</h1>
-
-<article class="encyclopedia_article">
-<h2>IntelliJ Idea</h2>
-<span class="category">Integrated desktop environment (IDE)</span>
-</article>
-
-<h1 class="encyclopedia_h1">M</h1>
-<article class="encyclopedia_article">
-<h2>MapStruct</h2>
-<span class="category">Java libraries</span>
-<span class="url">https://mapstruct.org/</span>
-
-</article>
+<tr><td class="gold">Git</td><td>Source code versioning</td><td> <x-star></x-star><x-star></x-star><x-star></x-star> </td><td>Description</td><td>Url</td></tr>
+<tr><td>Mercurial</td><td>Source code versioning</td><td> <x-star05></star05x-star05> </td><td>Description</td><td>Url</td></tr>
+<tr><td>SVN</td><td>Source code versioning</td><td> <x-star05></x-star05> </td><td>Description</td><td>Url</td></tr>
+<tr><td>CVS</td><td>Source code versioning</td><td> <x-star0></x-star0> </td><td>Description</td><td>Url</td></tr>
+<tr><td><a href="encyclopedia/Aspects_of_programming.html">Aspects of programming</a></td><td>Programming</td><td> <x-star05></x-star05> </td><td>Description</td><td>Url</td></tr>
 
 
-<h1 class="encyclopedia_h1">N</h1>
+<tr><td>Mozilla Firefox</td><td>Web browsers</td><td> <x-star></x-star><x-star></x-star> </td><td>Description</td><td>Url</td></tr>
+<tr><td>Libre Office</td><td>Office apps</td><td> <x-star></x-star><x-star></x-star> </td><td>Description</td><td>Url</td></tr>
+<tr><td>Webkit</td><td>Web browsers</td><td> <x-star></x-star><x-star></x-star> </td><td>Description</td><td>Url</td></tr>
 
-<article class="encyclopedia_article">
-<h2>Netbeans</h2>
-<span class="category">Integrated desktop environment (IDE)</span>
-</article>
+<tr><td class="gold">Linux</td><td>Operating systems</td><td> <x-star></x-star><x-star></x-star><x-star></x-star> </td><td>Operating system created by Linus Torvalds</td><td>Url</td></tr>
+<tr><td class="gold">Windows 95</td><td>Operating systems</td><td> <x-star></x-star><x-star></x-star><x-star></x-star> </td><td>Description</td><td>Url</td></tr>
+<tr><td>React OS</td><td>Operating systems</td><td> <x-star></x-star><x-star></x-star> </td><td>Description</td><td>Url</td></tr>
+<tr><td>Free DOS</td><td>Operating systems</td><td> <x-star05></x-star05> </td><td>Description</td><td>Url</td></tr>
+<tr><td>Android</td><td>Operating systems</td><td> <x-star05></x-star05> </td><td>Description</td><td>Url</td></tr>
+<tr><td>Debian</td><td>Linux distributions</td><td> <x-star></x-star> </td><td>Description</td><td>Url</td></tr>
+<tr><td>Ubuntu</td><td>Linux distributions</td><td> <x-star></x-star> </td><td>Description</td><td>Url</td></tr>
+<tr><td>LXQT</td><td>Linux desktop environments</td><td> <x-star></x-star> </td><td>Description</td><td>Url</td></tr>
+<tr><td>XML</td><td>Data formats</td><td> <x-star></x-star> </td><td>Description</td><td>Url</td></tr>
+<tr><td>Json</td><td>Data formats</td><td> <x-star></x-star> </td><td>Description</td><td>Url</td></tr>
+<tr><td>CSV</td><td>Data formats</td><td> <x-star></x-star> </td><td>Description</td><td>Url</td></tr>
+<tr><td>PDF</td><td>Data formats</td><td> <x-star></x-star> </td><td>Description</td><td>Url</td></tr>
+<tr><td>7Z</td><td>Data formats</td><td> <x-star></x-star> </td><td>Description</td><td>Url</td></tr>
+<tr><td>Base64</td><td>Data formats</td><td> <x-star></x-star> </td><td>Description</td><td>Url</td></tr>
+<tr><td>Maven</td><td>Build tools</td><td> <x-star></x-star><x-star></x-star><x-star></x-star> </td><td>Description</td><td>Url</td></tr>
+<tr><td>Gradle</td><td>Build tools</td><td> <x-star></x-star> </td><td>Description</td><td>Url</td></tr>
+<tr><td>Ant</td><td>Build tools</td><td> <x-star></x-star><x-star></x-star> </td><td>Description</td><td>Url</td></tr>
+<tr><td>Jenkins</td><td>Continous integration</td><td> <x-star></x-star> </td><td>Description</td><td>Url</td></tr>
+<tr><td>SonarQube</td><td>Static analysis</td><td> <x-star></x-star> </td><td>Description</td><td>Url</td></tr>
+<tr><td>Bugzilla</td><td>Ticket systems</td><td> <x-star></x-star> </td><td>Description</td><td>Url</td></tr>
+
+ 
+
+<!--
+<tr><td>name</td><td>category</td><td> <x-star></x-star> </td><td>Description</td><td>Url</td></tr>
+-->
+</tr>
+
+</table>
+
+
 
 <hr>
 <iframe src="footer-by-nc-sa.html" width="100%" height="125px" frameborder="0"></iframe>
