@@ -34,60 +34,92 @@ th,td {border:1px solid black; padding:5px;}
 </textarea>
 -->
 
+<b style="font-size:140%">Weight legend</b>
+<ul>
+<li>1-3 ... low</li>
+<li>4-5 ... medium</li>
+<li>6-8 ... important</li>
+<li>9-10 ... top important</li>
+</ul>
+<pre id="encyclopedia_data_csv" style="display:none">
+Name;Category;Weight (1-10);Description;Url;Wiki
+Java;Programming languages;5;;;yes
+Netbeans;Integrated desktop environments (IDEs);4;;;no
+Checkstyle;To be sorted;3;;;no
+Git;Source code versioning;3;;;no
+Linux;Operating systems;3;Operating system created by Linus Torvalds;;no
+Maven;Build tools;3;;;no
+Windows 95;Operating systems;3;;;no
+Ant;Build tools;2;;;no
+Behaviour driven development;To be sorted;2;;;no
+Corutines;To be sorted;2;;;no
+Libre Office;Office apps;2;;;no
+Mozilla Firefox;Web browsers;2;;;no
+React OS;Operating systems;2;;;no
+Tomcat;Java web application servers;2;;;no
+Webkit;Web browsers;2;;;no
+7Z;Data formats;1;;;no
+Android;Operating systems;1;;;no
+Aspects of programming;Programming;1;;;yes
+Base64;Data formats;1;;;no
+Bugzilla;Ticket systems;1;;;no
+Confluence;To be sorted;1;;;no
+CSV;Data formats;1;;;no
+Debian;Linux distributions;1;;;no
+Gradle;Build tools;1;;;no
+Jenkins;Continous integration;1;;;no
+Json;Data formats;1;;;no
+LXQT;Linux desktop environments;1;;;no
+MapStruct;Java libraries;1;;https://mapstruct.org/;no
+PDF;Data formats;1;;;no
+SonarQube;Static analysis;1;;;no
+Ubuntu;Linux distributions;1;;;no
+XML;Data formats;1;;;no
+CVS;Source code versioning;0;;;no
+Eclipse;Integrated desktop environments (IDEs);0;;;no
+Free DOS;Operating systems;0;;;no
+IntelliJ Idea;Integrated desktop environments (IDEs);0;;;no
+Mercurial;Source code versioning;0;;;no
+SVN;Source code versioning;0;;;no
 
-<table>
-<tr><th>Name</th><th>Category</th><th>Stars</th><th>Description</th><th>Url</th></tr>
-
-<tr><td>Eclipse</td><td>Integrated desktop environments (IDEs)</td><td><x-star05></x-star05></td><td></td><td></td></tr>
-
-<tr><td>IntelliJ Idea</td><td>Integrated desktop environments (IDEs)</td><td><x-star05></x-star05></td><td></td><td></td></tr>
-<tr><td><a href="encyclopedia/Java.html">Java</a></td><td>Programming languages</td><td> <x-star></x-star><x-star></x-star><x-star></x-star><x-star></x-star><x-star></x-star> </td><td></td><td></td></tr>
-
-<tr><td>MapStruct</td><td>Java libraries</td><td> <x-star></x-star> </td><td></td><td>https://mapstruct.org/</td></tr>
-<tr><td class="gold">Netbeans</td><td>Integrated desktop environments (IDEs)</td><td> <x-star></x-star><x-star></x-star><x-star></x-star><x-star></x-star> </td><td></td><td></td></tr>
-<tr><td>Tomcat</td><td>Java web application servers</td><td> <x-star></x-star><x-star></x-star> </td><td></td><td></td></tr>
-
-<tr><td class="gold">Git</td><td>Source code versioning</td><td> <x-star></x-star><x-star></x-star><x-star></x-star> </td><td>Description</td><td>Url</td></tr>
-<tr><td>Mercurial</td><td>Source code versioning</td><td> <x-star05></star05x-star05> </td><td>Description</td><td>Url</td></tr>
-<tr><td>SVN</td><td>Source code versioning</td><td> <x-star05></x-star05> </td><td>Description</td><td>Url</td></tr>
-<tr><td>CVS</td><td>Source code versioning</td><td> <x-star0></x-star0> </td><td>Description</td><td>Url</td></tr>
-<tr><td><a href="encyclopedia/Aspects_of_programming.html">Aspects of programming</a></td><td>Programming</td><td> <x-star05></x-star05> </td><td>Description</td><td>Url</td></tr>
 
 
-<tr><td>Mozilla Firefox</td><td>Web browsers</td><td> <x-star></x-star><x-star></x-star> </td><td>Description</td><td>Url</td></tr>
-<tr><td>Libre Office</td><td>Office apps</td><td> <x-star></x-star><x-star></x-star> </td><td>Description</td><td>Url</td></tr>
-<tr><td>Webkit</td><td>Web browsers</td><td> <x-star></x-star><x-star></x-star> </td><td>Description</td><td>Url</td></tr>
+</pre>
 
-<tr><td class="gold">Linux</td><td>Operating systems</td><td> <x-star></x-star><x-star></x-star><x-star></x-star> </td><td>Operating system created by Linus Torvalds</td><td>Url</td></tr>
-<tr><td class="gold">Windows 95</td><td>Operating systems</td><td> <x-star></x-star><x-star></x-star><x-star></x-star> </td><td>Description</td><td>Url</td></tr>
-<tr><td>React OS</td><td>Operating systems</td><td> <x-star></x-star><x-star></x-star> </td><td>Description</td><td>Url</td></tr>
-<tr><td>Free DOS</td><td>Operating systems</td><td> <x-star05></x-star05> </td><td>Description</td><td>Url</td></tr>
-<tr><td>Android</td><td>Operating systems</td><td> <x-star05></x-star05> </td><td>Description</td><td>Url</td></tr>
-<tr><td>Debian</td><td>Linux distributions</td><td> <x-star></x-star> </td><td>Description</td><td>Url</td></tr>
-<tr><td>Ubuntu</td><td>Linux distributions</td><td> <x-star></x-star> </td><td>Description</td><td>Url</td></tr>
-<tr><td>LXQT</td><td>Linux desktop environments</td><td> <x-star></x-star> </td><td>Description</td><td>Url</td></tr>
-<tr><td>XML</td><td>Data formats</td><td> <x-star></x-star> </td><td>Description</td><td>Url</td></tr>
-<tr><td>Json</td><td>Data formats</td><td> <x-star></x-star> </td><td>Description</td><td>Url</td></tr>
-<tr><td>CSV</td><td>Data formats</td><td> <x-star></x-star> </td><td>Description</td><td>Url</td></tr>
-<tr><td>PDF</td><td>Data formats</td><td> <x-star></x-star> </td><td>Description</td><td>Url</td></tr>
-<tr><td>7Z</td><td>Data formats</td><td> <x-star></x-star> </td><td>Description</td><td>Url</td></tr>
-<tr><td>Base64</td><td>Data formats</td><td> <x-star></x-star> </td><td>Description</td><td>Url</td></tr>
-<tr><td>Maven</td><td>Build tools</td><td> <x-star></x-star><x-star></x-star><x-star></x-star> </td><td>Description</td><td>Url</td></tr>
-<tr><td>Gradle</td><td>Build tools</td><td> <x-star></x-star> </td><td>Description</td><td>Url</td></tr>
-<tr><td>Ant</td><td>Build tools</td><td> <x-star></x-star><x-star></x-star> </td><td>Description</td><td>Url</td></tr>
-<tr><td>Jenkins</td><td>Continous integration</td><td> <x-star></x-star> </td><td>Description</td><td>Url</td></tr>
-<tr><td>SonarQube</td><td>Static analysis</td><td> <x-star></x-star> </td><td>Description</td><td>Url</td></tr>
-<tr><td>Bugzilla</td><td>Ticket systems</td><td> <x-star></x-star> </td><td>Description</td><td>Url</td></tr>
+<div id="encyclopedia_table">
+</div>
 
- 
 
-<!--
-<tr><td>name</td><td>category</td><td> <x-star></x-star> </td><td>Description</td><td>Url</td></tr>
--->
-</tr>
 
-</table>
+<script>
 
+const encyclopedia_table = document.getElementById("encyclopedia_table");
+
+const table = createTableFromCsvContentOfElement("encyclopedia_data_csv")
+encyclopedia_table.appendChild(table)
+
+
+for (const tr of table.children) {
+
+    var column_number = 0
+    var nameTd = tr.children[1]
+    if(nameTd==undefined){continue}
+    var wiki = tr.children[6]
+    
+    if(wiki.textContent==='yes') {
+    var a = document.createElement("a")
+    a.setAttribute("href","encyclopedia/" + nameTd.textContent.replace(/\s/g, '_') + ".html")
+    a.appendChild(document.createTextNode(nameTd.textContent))
+    
+    nameTd.textContent=""
+    nameTd.appendChild(a)
+    }
+          
+    }  
+
+
+
+</script>
 
 
 <hr>
