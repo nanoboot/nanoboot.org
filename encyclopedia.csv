@@ -1,0 +1,39 @@
+Name;Category;Weight (0-5);Description;Url;Wiki
+Java;Programming languages;5;;;yes
+Netbeans;Integrated desktop environments (IDEs);3;;;no
+Checkstyle;To be sorted;3;;;no
+Git;Source code versioning;3;;;no
+Linux;Operating systems;4;Operating system created by Linus Torvalds;;no
+Maven;Build tools;3;;;no
+Windows 95;Operating systems;5;;;no
+Ant;Build tools;2;;;no
+Behaviour driven development;To be sorted;2;;;no
+Corutines;To be sorted;2;;;no
+Libre Office;Office apps;2;;;no
+Mozilla Firefox;Web browsers;2;;;no
+React OS;Operating systems;2;;;no
+Tomcat;Java web application servers;2;;;no
+Webkit;Web browsers;2;;;no
+7Z;Data formats;1;;;no
+Android;Operating systems;1;;;no
+Aspects of programming;Programming;1;;;yes
+Base64;Data formats;1;;;no
+Bugzilla;Ticket systems;1;;;no
+Confluence;To be sorted;1;;;no
+CSV;Data formats;1;;;no
+Debian;Linux distributions;1;;;no
+Gradle;Build tools;1;;;no
+Jenkins;Continous integration;1;;;no
+Json;Data formats;1;;;no
+LXQT;Linux desktop environments;1;;;no
+MapStruct;Java libraries;1;;https://mapstruct.org/;no
+PDF;Data formats;1;;;no
+SonarQube;Static analysis;1;;;no
+Ubuntu;Linux distributions;1;;;no
+XML;Data formats;1;;;no
+CVS;Source code versioning;0;;;no
+Eclipse;Integrated desktop environments (IDEs);0;;;no
+Free DOS;Operating systems;0;;;no
+IntelliJ Idea;Integrated desktop environments (IDEs);0;;;no
+Mercurial;Source code versioning;0;;;no
+SVN;Source code versioning;0;;;no
