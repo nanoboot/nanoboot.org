@@ -100,3 +100,7 @@ font-size:120%;
 letter-spacing:1px;
 }
 .gold {background-color:yellow;}
+
+th {
+background:#aaaaaa;
+}
