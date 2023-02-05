@@ -34,15 +34,24 @@ th,td {border:1px solid black; padding:5px;}
 </textarea>
 -->
 
-<b style="font-size:140%">Weight legend</b>
+<style>
+.weight-5 {color:#FF8000;}
+.weight-4 {color:#0000FF;}
+.weight-3 {color:#006600;}
+.weight-2 {color:#CCCC00;}
+.weight-1 {color:#FF0000;}
+</style>
+<b style="font-size:140%">Weight legend:</b>
 <ul>
 <li>0 ... none</li>
-<li>1 ... lowest</li>
-<li>2 ... low</li>
-<li>3 ... medium (BRONZ)</li>
-<li>4 ... high (SILVER)</li>
-<li>5 ... highest (GOLD)</li>
+<li class="weight-5">5 ... highest (GOLD) ... Meaning of existence of Nanoboot</li>
+<li class="weight-4">4 ... high (SILVER) ... Cannot live without</li>
+<li class="weight-3">3 ... medium (BRONZ) ... Helpful tool</li>
+<li class="weight-2">2 ... low ... Interesting and must be investigated one day</li>
+<li class="weight-1">1 ... lowest ... Interesting, but can live without</li>
+<li>0 ... none</li>
 </ul>
+
 <pre id="encyclopedia_data_csv" style="display:none">
 Name;Category;Weight (0-5);Description;Url;Wiki
 
@@ -70,6 +79,7 @@ for (const tr of table.children) {
     var nameTd = tr.children[1]
     if(nameTd==undefined){continue}
     var wiki = tr.children[6]
+    var topic = tr.children[7]
     
     if(wiki.textContent==='yes') {
     var a = document.createElement("a")
@@ -78,6 +88,9 @@ for (const tr of table.children) {
     
     nameTd.textContent=""
     nameTd.appendChild(a)
+    }  
+    if(topic.textContent==='yes') {
+    nameTd.setAttribute("style","background:yellow");
     }
           
     }

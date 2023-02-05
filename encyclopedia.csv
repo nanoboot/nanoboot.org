@@ -1,25 +1,43 @@
 Name;Category;Weight (0-5);Description;Url;Wiki;Topic
-Java;Programming languages;5;;;yes;
-Windows 95;Operating systems;5;;;no;
-Linux;Operating systems;4;Operating system created by Linus Torvalds;;no;
+artificial intelligence;Science;5;;;no;yes
+Color Lines Museum;Nanoboot products;5;;;no;yes
+Color linez (Desktop / Web);Nanoboot products;5;;;no;yes
+Color Shapes;Nanoboot products;5;(Engine / Desktop / Server / Client / Web);;no;yes
+decision theory;Science;5;;;no;yes
+game theory;Science;5;;;no;yes
+Java;Programming languages;5;;;yes;yes
+Java FX;Java libraries;5;;;no;yes
+SQLite;Databases;5;;;no;yes
+statistics;Science;5;;;no;yes
+Windows 95;Operating systems;5;;;no;yes
+Linux;Operating systems;4;Operating system (Unix clone) created by Linus Torvalds;;no;yes
+Octagon;Nanoboot products;4;;;no;yes
+PostgreSQL;Databases;4;;;no;yes
+Power Framework;Nanoboot products;4;;;no;yes
 Checkstyle;To be sorted;3;;;no;
 Debian;Linux distributions;3;;;no;
-Git;Source code versioning;3;;;no;
+Git;Source code versioning;3;;;no;yes
+Lisp;Programming languages;3;;;no;yes
 LXQT;Linux desktop environments;3;;;no;
 MapStruct;Java libraries;3;;https://mapstruct.org/;no;
-Maven;Build tools;3;;;no;
-Mozilla Firefox;Web browsers;3;;;no;
-Netbeans;Integrated desktop environments (IDEs);3;;;no;
-SonarQube;Static analysis;3;;;no;
-Tomcat;Java web application servers;3;;;no;
+Maven;Build tools;3;;;no;yes
+Mozilla Firefox;Web browsers;3;;;no;yes
+Netbeans;Integrated desktop environments (IDEs);3;;;no;yes
+SonarQube;Static analysis;3;;;no;yes
+Swing;Java libraries;3;;;no;yes
+Tomcat;Java web application servers;3;;;no;yes
 Ubuntu;Linux distributions;3;;;no;
 Webkit;Web browsers;3;;;no;
 Ant;Build tools;2;;;no;
 Behaviour driven development;To be sorted;2;;;no;
+FSF (Free Software Foundation);To be sorted;2;;;no;no
+GNU;To be sorted;2;;;no;no
+GPL;To be sorted;2;;;no;no
 Gradle;Build tools;2;;;no;
-Jenkins;Continous integration;2;;;no;
-Libre Office;Office apps;2;;;no;
-React OS;Operating systems;2;;;no;
+Jenkins;Continous integration;2;;;no;yes
+Libre Office;Office apps;2;;;no;yes
+math;Science;2;;;no;yes
+React OS;Operating systems;2;;;no;yes
 7Z;Data formats;1;;;no;
 Android;Operating systems;1;;;no;
 Aspects of programming;Programming;1;;;yes;
@@ -30,7 +48,7 @@ Corutines;To be sorted;1;;;no;
 CSV;Data formats;1;;;no;
 Json;Data formats;1;;;no;
 PDF;Data formats;1;;;no;
-XML;Data formats;1;;;no;
+XML;Data formats;1;;;no;yes
 CVS;Source code versioning;0;;;no;
 Eclipse;Integrated desktop environments (IDEs);0;;;no;
 Free DOS;Operating systems;0;;;no;
