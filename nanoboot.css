@@ -61,10 +61,6 @@ font-weight: bold;
 line-height: 45px;
 }
 
-/*
-, (pointer:none), (pointer:coarse)
-*/
-
 @media screen and (max-width: 800px), (pointer:none), (pointer:coarse) {
   #menu li a{
   padding-left:20px;
