@@ -31,13 +31,16 @@ padding:0;
 padding-left: 40px;
 }
 
+
 #menu li {
 display:inline-block;
 border-left: 0px solid #4169E1;
 border-right: 0px solid #4169E1;
+
 font-size:120%;
 background: #4169E1;
-white-space: nowrap;
+/*white-space: nowrap;*/
+
 
 /*
 -webkit-transition : all 0.4s;
@@ -61,12 +64,17 @@ font-weight: bold;
 line-height: 45px;
 }
 
+
 @media screen and (max-width: 800px), (pointer:none), (pointer:coarse) {
 
   #menu li a{
   padding-left:20px;
-  padding-right: 100%;
+  padding-right: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
   line-height: 45px;
+  display:block;
   }
   
   #footer{
@@ -75,23 +83,27 @@ line-height: 45px;
   
   #menu li{
   display: block;
-  font-size:100%;
   }
   
+  
+
   #menu{
   height: 100%;
-  padding-left: 0px;
   width: 100%;
   border-top:6px solid #0000CD;
+  padding-left: 0;
   }
+  
   body{
   max-width:800px;
   border-left:0;
   border-right:0;
   padding:4px !important;
   }
-
 }
+
+
+
 /*
 @media screen and (max-width: 800px) {
   #menu{
@@ -101,14 +113,14 @@ line-height: 45px;
 }
 */
 
-/*
+
 @media screen and (pointer:none), (pointer:coarse) {
   #main_title_a {
   font-size:500%;
   }
 
 }
-*/
+
 
 
 h1 {
