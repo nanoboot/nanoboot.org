@@ -84,6 +84,8 @@ line-height: 45px;
   #menu{
   height: 100%;
   padding-left: 0px;
+  /*width: 100%;*/
+  border-top:6px solid #0000CD;
   }
   body{
   max-width:800px;
@@ -93,6 +95,14 @@ line-height: 45px;
   }
 
 }
+/*
+@media screen and (max-width: 800px) {
+  #menu{
+  border-top:6px solid #0000CD;
+  }
+
+}
+*/
 
 @media screen and (pointer:none), (pointer:coarse) {
   #main_title_a {
