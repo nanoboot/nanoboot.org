@@ -65,7 +65,7 @@ line-height: 45px;
 
   #menu li a{
   padding-left:20px;
-  padding-right: 20px;
+  padding-right: 100%;
   line-height: 45px;
   }
   
@@ -101,12 +101,14 @@ line-height: 45px;
 }
 */
 
+/*
 @media screen and (pointer:none), (pointer:coarse) {
   #main_title_a {
   font-size:500%;
   }
 
 }
+*/
 
 
 h1 {
