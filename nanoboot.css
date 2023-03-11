@@ -2,19 +2,119 @@
 font-family: Arial;
 }
 
-#title {
-font-size: 200%;
-font-weight: bold;
-color: blue;
-
-/*padding-left:10px;*/
+#main_title_a {
+font-size:250%;
+font-family:Arial;
+margin:0;
+padding:0;
+margin-left:0px;
+font-weight:bold;
+color:blue;
+text-transform: uppercase;
+text-shadow: 4px 4px rgb(200,200,200);
+background:yellow;
+text-decoration:none;
 }
-body{
-margin:15px;
-border: 4px solid #ccc;
+
+#main_title_a:link { text-decoration: none; }
+#main_title_a:visited { text-decoration: none; }
+#main_title_a:hover { text-decoration: none; }
+#main_title_a:active { text-decoration: none; }
+
+
+#menu {
+background: #4169E1;
+border-left: 0px solid #4169E1;
+border-right: 0px solid #4169E1;
+margin-top:10px;
+padding:0;
+padding-left: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  #menu{
+  height: 100%;
+  padding-left: 0px;
+  }
+}
+
+#menu li {
+display:inline-block;
+border-left: 0px solid #4169E1;
+border-right: 0px solid #4169E1;
+font-size:125%;
+background: #4169E1;
+
+/*
+-webkit-transition : all 0.4s;
+-moz-transition : all 0.4s;
+transition: all 0.4s;
+*/
+}
+
+@media screen and (max-width: 600px) {
+  #menu li{
+  display: block;
+  font-size:100%;
+  }
+}
+
+#menu li:hover {
+background: #0000CD;
+}
+
+#menu li a {
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 15px;
+padding-right: 15px;
+color:white;
+text-decoration:none;
+font-weight: bold;
+line-height: 45px;
+}
+@media screen and (max-width: 600px) {
+  #menu li a{
+  padding:5px;
+  padding-left:20px;
+  line-height: 35px;
+  }
+}
+#footer2 {
+font-size:75%;
+}
+
+@media screen and (max-width: 600px) {
+  #footer{
+  font-size:75%;
+  }
+}
+
+h1 {
+border-bottom:4px solid #dddddd;
+}
+
+body {
+max-width:1200px;
 min-height: 600px;
+margin:0 auto; 
+border-right:6px solid #eeeeee;
+border-left:6px solid #eeeeee;
+/*border: 4px solid #ccc;*/
+font-family: Arial;
+border-top:4px solid #4169E1;
+margin-bottom:20px;
+/*background-color:#e5e7e9; */
 padding: 10px;
 }
+
+@media screen and (max-width: 600px) {
+  body {
+  border-left:0;
+  border-right:0;
+  }
+}
+
 /*
 p {
 padding-left:10px;
@@ -23,16 +123,7 @@ padding-left:10px;
 hr {
 border: 2px solid #ddd;
 }
-.category,.url {
-color:grey;
-margin:0;
-padding:0;
-font-style: italic;
-display:block;
-}
-.category::before {
-content: "Category: ";
-}
+
 .url::before {
 content: "URL: ";
 }
@@ -104,3 +195,6 @@ letter-spacing:1px;
 th {
 background:#aaaaaa;
 }
+
+
+

@@ -1,26 +1,26 @@
 #! /bin/bash
 
-txtFile=version.html
-# Create version.html if it does not exist
-if [[ ! -e ./$txtFile ]]; then
-    echo "0" >$txtFile
+versionFile=version.html
+# Create version.html, if it does not yet exist
+if [[ ! -e ./$versionFile ]]; then
+    echo "0" >$versionFile
 fi
 
-# Increment version.txt
+# Increment version.html
 #script, which increments the number in file version.txt
-cat $txtFile | while read LINE; do
+cat $versionFile | while read LINE; do
     versionNumber=$LINE
     newVersionNumber=$((versionNumber+1))
-    echo $newVersionNumber>$txtFile
-    echo Version incremented to `cat $txtFile`
+    echo $newVersionNumber>$versionFile
+    echo Version incremented to `cat $versionFile`
     break
 done
 
 # Save all work
 
 git add .
-versionHtmlContent=`cat $txtFile`
-version=$versionHtmlContent
+versionContent=`cat $versionFile`
+version=$versionContent
 dateVar=`date +%Y%m%d-%H%M%S`
 
 git commit -m "NANOBOOT-2 : Released version $version ($dateVar)"
