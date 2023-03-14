@@ -14,9 +14,9 @@ font-weight:bold;
 color:blue;
 text-transform: uppercase;
 text-shadow: 4px 4px rgb(200,200,200);
-background:yellow;
+background:#ff9;
 text-decoration:none;
-display:block;
+/*display:flex;*/
 }
 
 #main_title_a:link { text-decoration: none; }
@@ -40,7 +40,10 @@ padding-left: 40px;
 display:inline-block;
 border-left: 0px solid #4169E1;
 border-right: 0px solid #4169E1;
-
+/*
+border-top:4px solid #4169E1;
+border-bottom:4px solid #4169E1;
+*/
 font-size:120%;
 background: #4169E1;
 /*white-space: nowrap;*/
