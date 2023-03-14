@@ -6,8 +6,9 @@ font-family: Arial;
 font-size:250%;
 font-family:Arial;
 margin:0;
-padding:0;
+padding:0px;
 padding-left:5px;
+padding-right:10px;
 margin-left:0px;
 font-weight:bold;
 color:blue;
@@ -15,6 +16,7 @@ text-transform: uppercase;
 text-shadow: 4px 4px rgb(200,200,200);
 background:yellow;
 text-decoration:none;
+display:block;
 }
 
 #main_title_a:link { text-decoration: none; }
@@ -27,7 +29,7 @@ text-decoration:none;
 background: #4169E1;
 border-left: 0px solid #4169E1;
 border-right: 0px solid #4169E1;
-margin-top:10px;
+margin-top:0px;
 margin-bottom:0;
 padding:0;
 padding-left: 40px;
@@ -193,13 +195,13 @@ background:#aaaaaa;
 
 #footer {
   display: flex;
-  border-top:4px solid rgb(240,240,240);
+  border-top:4px solid rgb(230,230,230);
   padding-top: 10px;
   padding-bottom: 5px;
   padding-left: 10px;
   padding-right: 10px;
   color: rgb(50, 51, 52);
-  margin-top:20px;
+  /*margin-top:20px;*/
   /**/
   background: white;/*rgb(200, 201, 202);*/
   font-size:95%;
@@ -219,11 +221,13 @@ background:#aaaaaa;
 @media screen and (max-width: 600px) {
   .footer_column_left, .footer_column_right {
     width: 100%;
-  }  
+  }
 }
 
 #content{
-background: rgb(245,245,245);
+background:white;
+/*background: rgb(255,255,240);*/
+/*rgb(245,245,245);*/
 padding: 10px;
 color: rgb(40, 41, 42);
 padding-bottom: 30px;
@@ -231,4 +235,7 @@ padding-bottom: 30px;
 border-left: 6px solid rgb(240,240,240);
 border-right: 6px solid rgb(240,240,240);
 */
+}
+body {
+background: rgb(243,243,243);
 }
