@@ -23,4 +23,4 @@ versionContent=`cat $versionFile`
 version=$versionContent
 dateVar=`date +%Y%m%d-%H%M%S`
 
-git commit -m "NANOBOOT-2 : Released version $version ($dateVar)"
+git commit -m "Released version $version ($dateVar)"
