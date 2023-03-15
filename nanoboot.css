@@ -242,3 +242,20 @@ border-right: 6px solid rgb(240,240,240);
 body {
 background: rgb(243,243,243);
 }
+
+.banner1, .banner2 {
+display:block;
+padding: 10px;
+padding-left: 30px;
+font-size:120%;
+}
+
+.banner1 {
+background:#9F9;
+}
+
+
+.banner2 {
+background:#CFF
+}
+
