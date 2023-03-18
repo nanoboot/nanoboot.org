@@ -54,11 +54,12 @@ background: #4169E1;
 -moz-transition : all 0.4s;
 transition: all 0.4s;
 */
+
 }
 
 #menu li a {
 padding-top: 10px;
-padding-bottom: 0px;
+padding-bottom: 10px;
 padding-left: 15px;
 padding-right: 15px;
 color:white;
@@ -77,6 +78,7 @@ color:yellow !important;
 #menu li:hover {
 background: #0000CD;
 }
+
 
 @media screen and (max-width: 800px), (pointer:none), (pointer:coarse) {
 
@@ -134,6 +136,10 @@ background: #0000CD;
 
 h1 {
 border-bottom:4px solid #dddddd;
+}
+h2 {
+border-bottom:3px solid #99CCFF;
+
 }
 
 body {
@@ -231,7 +237,7 @@ background:#aaaaaa;
 background:white;
 /*background: rgb(255,255,240);*/
 /*rgb(245,245,245);*/
-padding: 10px;
+padding: 15px;
 color: rgb(40, 41, 42);
 padding-bottom: 30px;
 /*
