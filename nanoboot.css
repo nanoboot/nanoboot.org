@@ -14,7 +14,7 @@ font-weight:bold;
 color:blue;
 text-transform: uppercase;
 text-shadow: 4px 4px rgb(200,200,200);
-background:#ff9;
+background:yellow;
 text-decoration:none;
 /*display:flex;*/
 }
@@ -135,11 +135,16 @@ background: #0000CD;
 
 
 h1 {
-border-bottom:4px solid #dddddd;
+/*border-bottom:4px solid #dddddd;*/
+font-size:220%;
+
 }
 h2 {
-border-bottom:3px solid #99CCFF;
+/*border-bottom:3px solid #99CCFF;*/
+}
 
+h3 {
+/*border-bottom:2px solid orange;*/
 }
 
 body {
@@ -174,11 +179,11 @@ content: "URL: ";
 }
 
 x-note::before {
-content:"( ";
+content:"(";
 color:grey;
 }
 x-note::after {
-content:" )";
+content:")";
 color:grey;
 }
 x-note {
@@ -264,4 +269,9 @@ background:#9F9;
 .banner2 {
 background:#CFF
 }
+/*
+b {
+color:#DF7000;
+}
+*/
 
