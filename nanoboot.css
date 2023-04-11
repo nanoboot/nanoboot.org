@@ -162,7 +162,7 @@
 
 
 h1 {
-    /*border-bottom:4px solid #dddddd;*/
+    border-bottom:4px solid #dddddd;
     font-size:220%;
     /*color:#0000CC;*/
     margin-top:10px;
@@ -222,16 +222,16 @@ th {
 
 #footer {
     display: flex;
-    border-top:4px solid rgb(230,230,230);
-    padding-top: 10px;
-    padding-bottom: 5px;
+    border-top:4px solid rgb(200,200,200);
+    padding-top: 6px;
+    padding-bottom: 6px;
     padding-left: 10px;
     padding-right: 10px;
     color: rgb(50, 51, 52);
-    /*margin-top:20px;*/
-    /**/
-    background: white;/*rgb(200, 201, 202);*/
-    font-size:95%;
+    /*background: #3D3F4A;*/
+    background: #505365;
+    font-size:90%;
+    color:rgb(240,240,240);
     /**/
 
     align-items: center;
@@ -243,6 +243,20 @@ th {
 .footer_column_right {
     flex: 50%;
     text-align:right;
+    text-decoration:none;
+}
+.footer_column_right a {
+    text-decoration:none;
+    align-content: center;
+    color:rgb(240,240,240);
+}
+
+.footer_column_right a:hover {
+    text-decoration: underline;
+}
+
+#footer a img{
+    height:20px;
 }
 
 @media screen and (max-width: 600px) {
