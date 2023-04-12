@@ -10,20 +10,32 @@
 
 <style>
 .div_sw {
-background:rgb(245,245,245);
-padding: 10px;
-margin-top:30px;
-border:4px solid rgb(235,235,235);
+/*background:rgb(245,245,245);*/
+padding: 5px;
+margin-bottom:30px;
+/*border:4px solid rgb(235,235,235);*/
 }
 
 .div_sw img {
-width:50%;
-height:50%;
-max-width:800px;
+max-width:90%;
 /*border:4px solid #EEE;*/
 padding:20px;
 padding-left:5px;
 background:white;
+}
+.div_sw h3 {
+    margin-top:5px;
+    padding-bottom:10px;
+}
+.div_sw video {
+max-width:600px;
+}
+
+
+@media screen and (max-width: 800px), (pointer:none), (pointer:coarse) {
+.div_sw video {
+max-width:90%;
+}
 }
 </style>
 
@@ -84,6 +96,7 @@ x-h {
 
 <ul id="menu">
 <li class="menu_li_current_item"><a href="index.html" target="_parent" style="">Home</a></li>
+<li><a href="about.html" target="_parent">About</a></li>
 <li><a href="software.html" target="_parent">Software</a></li>
 <li><a href="downloads.html" target="_parent">Downloads</a></li>
 <li><a href="documentation.html" target="_parent">Documentation</a></li>
@@ -101,24 +114,27 @@ x-h {
 <h1>Nanoboot</h1>
 
 <h2>What is Nanoboot</h2>
-<p>
+
 <b>Nanoboot</b> is collection of free software <x-note>mostly written in Java programming language</x-note>.
-</p>
+
+            <ul>
+                <li>licenced under GPL or LGPL licences <x-note>we wish sharing this software</x-note></li>
+                <li>gratis <x-note>price is 0</x-note></li>
+                <li>your freedom is respected</li>
+            </ul>
+
+Let see some software examples:
 
 
-<div style="margin-bottom:50px;"></div>
+<h2>Color Shapes - game</h2>
 
-
-
-<h2>What we are working on</h2>
-
-<h3>Color Shapes - our main work</h3>
 <div class="div_sw">
+
 Play a never-ending game, have fun forever. <a href="software.html#color-shapes">more information</a><br><br>
 
 <!--<a href="software.html#color-shapes"><img src="https://docs.nanoboot.org/Products/ColorShapesDesktop/Screenshots?action=AttachFile&do=get&target=color-shapes-1.0.0.jpg" /></a>-->
 
-<video controls autoplay loop muted style="max-width:600px;">
+<video controls autoplay loop muted>
   <source src="videos/Color_Shapes.mp4" type="video/mp4">
   This browser does not display the video tag. Video Color_Shapes.mp4 could not be played.
 </video>
@@ -126,11 +142,11 @@ Play a never-ending game, have fun forever. <a href="software.html#color-shapes"
 </div>
 
 
-<h3>JBugzilla - Bugzilla written in Java</h3>
+<h2>JBugzilla - issue tracker</h2>
 <div class="div_sw">
-JBugzilla is Bugzilla implemented in Java programming language <a href="software.html#jbugzilla">more information</a><br>
+    JBugzilla is Bugzilla written in Java programming language <a href="software.html#jbugzilla">more information</a><br>
 
-<div style="font-size:100%;text-align:center;color:blue;background:yellow;border-top:5px dashed red;border-bottom:5px dashed red;padding:5px;margin-top:10px;margin-bottom:0px;width:500px;">Development of JBugzilla is in progress. It is not ready for production usage.</div>
+<div class="danger_zone">Development progress: 5% only. Help needed.</div>
 
 <br>
 See <b>JBugzilla</b> in action: <a href="https://bugzilla.test.nanoboot.org">https://bugzilla.test.nanoboot.org</a>
@@ -141,17 +157,17 @@ See <b>JBugzilla</b> in action: <a href="https://bugzilla.test.nanoboot.org">htt
 </div>
 
 
-<h3>Power Framework - many Java libraries</h3>
+<h2>Power Framework - over 20 Java libraries</h2>
 <div class="div_sw">
-Develop amazing apps with our collection of Java libraries <a href="software.html#power-framework">more information</a><br>
+Develop amazing apps with this collection of Java libraries <a href="software.html#power-framework">more information</a><br>
 <ul>
 <li>
-Java libraries for: json, time, randomness, IO, web, XML, GUI + much more
+Features: JSON, time, randomness, IO, web, XML, GUI + much more
 </li>
 </ul>
 </div>
 
-<h3>DB Migration - DB schema versioning</h3>
+<h2>DB Migration - DB schema management</h2>
 <div class="div_sw">
 Create database schema changesets <a href="software.html#db-migration">more information</a><br><br>
 
@@ -159,209 +175,17 @@ Create database schema changesets <a href="software.html#db-migration">more info
 <!--<a href="software/db-migration/index.html">More screenshots</a>-->
 </div>
 
-<h3>We are working on much more</h3>
+<h2>Octagon - knowledge assistent</h2>
 <div class="div_sw">
-... <a href="software.html">more information</a> <br><br>
+    Organize your stuff! <a href="software.html#octagon">more information</a><br>
 
+<div class="danger_zone">Development progress: 20% only. Help needed.</div>
+
+<br>
+
+<img src="https://docs.nanoboot.org/Products/Octagon/Screenshots?action=AttachFile&do=get&target=octagon_screenshot2.jpg" /></a>
 
 </div>
-
-<h2>About us</h1>
-
-
-<h3>History</h3>
-
-Software development started already in January 2016.<br>
-Nanoboot Project was publicly announced on 2nd December 2022.
-
-<h3>Our mission</h3>
-
-<ol>
-<li>To <b style="color:blue;">develop</b> game <b>Color Shapes</b> <x-note>"Color linez" clone</x-note></li>
-<li>To <b style="color:green;">study</b> game <b>Color linez</b> <x-note>"Color Lines" clone</x-note></li>
-<li>To <b style="color:blue;">develop</b> reimplementation of <b>Color linez</b> game <x-note>using Java, JavaFX, ...</x-note></li>
-<li>To <b style="color:brown;">collect</b> all webpages on the Internet related to game <b>Color Lines</b> and its clones</li>
-<li>To <b style="color:green;">study</b> game <b>Color Lines</b> and its clones</li>
-<li>To <b style="color:blue;">develop</b> supportive libraries for game <b>Color Shapes</b> <x-note> like Power Framework and DB Migration</x-note></li>
-<li>To <b style="color:green;">study and learn</b> technologies, which <b>Color Shapes</b> uses. <x-note> Java, JavaFX, SQLite, Git, Maven, ...</x-note></li>
-
-</ol>
-
-<h2>Awesome Nanoboot</h2>
-
-<p>This is list of awesome projects related to Nanoboot.</p>
-<ul>
-<li>
-These projects were carefully chosen and thoughtfully organized or presented. 
-</li>
-</ul>
-
-<p> Each topic is flagged by a letter (A - H): A ... 100% awesome H ... 12,5% awesome</p>
-<pre>
-100
-87,5
-75
-62,5
-50
-37,5
-25
-12,5
-</pre>
-<ul class="li_with_bottom_margin">
-
-<li><x-a>A</x-a>
-<ul>
-<li>Color Shapes</li>
-<li>Color linez</li>
-<li>Color Lines</li>
-<li>Windows 95</li>
-</ul>
-</li>
-
-<li><x-b>B</x-b>
-<ul>
-<li>Java</li>
-<li>JavaFX</li>
-<li>SQLite</li>
-<li>Artificial intelligence</li>
-<li>Statistics</li>
-<li>Decision theory</li>
-<li>Game theory</li>
-</ul>
-</li>
-
-<li><x-c>C</x-c>
-<ul>
-    <li>Linux</li>
-    <li>Power Framework</li>
-    <li>Netbeans</li>
-    <li>Git</li>
-    <li>Maven</li>
-    <li>UML</li>
-    <li>Tomcat</li>
-</ul>
-</li>
-
-<li><x-d>D</x-d>
-<ul>
-    <li>Genetic programming</li>
-    <li>Cryptocurrencies</li>
-    <li>Math</li>
-    <li>...</li>
-</ul>
-</li>
-
-
-<li><x-e>E</x-e>
-<ul>
-    <li>...</li>
-</ul>
-</li>
-
-
-<li><x-f>F</x-f>
-<ul>
-    <li>...</li>
-</ul>
-</li>
-
-
-<li><x-g>G</x-g>
-<ul>
-    <li>...</li>
-</ul>
-</li>
-
-
-<li><x-h>H</x-h>
-<ul>
-    <li>...</li>
-</ul>
-</li>
-
-
-
-
-
-</ul>
-
-
-
-
-<!--
-<div style="font-size:100%;text-align:center;color:blue;background:yellow;border-top:5px dashed black;border-bottom:5px dashed black;padding:5px;margin-top:10px;margin-bottom:0px;width:500px;">Note: Creation of this section is under progress.</div>
--->
-
-<!--
-English
-Spring Framework
-Cryptocurrencies
-Peer to peer
-Blockchain
-GTD
-Octagon
-PostgreSQL
-SonarQube
-HTML
-CSS
-JavaScript
-SVG
-Hibernate
-ReactOS
-Wine
-Debian
-Ubuntu
-LXQT
-KDE
-
-
-Russian
-
-
-
-
-
-Android
-Swing
-
-Streeetgame
-
-Manifesto
-
-Nginx
-Docker
-VirtualBox
-Enterprise Architect
-
-
-
-PDM
-
-RoundCube
-
-Postfix
-
-Sendmail
-
-Bulletproof
-
-Log4j
-
-Logback
-
-Mockito
-
-Jmock
-
-Easymock
-
--->
- 
-
- 
-
-
-
 
 
 
