@@ -87,12 +87,12 @@
 
 .menu_li_current_item {
 }
-/*
+
 .menu_li_current_item a {
-    color: white !important;
-    background: #27282C;
+    color: #ffff99 !important;
+    /*background: #27282C;*/
 }
-*/
+
 
 #menu li:hover {
     background: #27282C;
