@@ -11,6 +11,7 @@
         <style>
             .status_not_yet_developed,
             .status_almost_nothing_implemented,
+            .status_abandoned,
             .status_under_progress,
             .status_partially_implemented,
             .status_implemented,
@@ -40,6 +41,11 @@
                 content: "ALMOST NOTHING IMPLEMENTED\A";
                 white-space: pre;
                 background: #ccffff;
+            }
+            .status_abandoned::after {
+                content: "ABANDONED\A";
+                white-space: pre;
+                background: #99ffff;
             }
 
 
@@ -139,10 +145,7 @@
         <p>Multi-purpose system - documentation, issue tracking, encyclopedia + much more </p>
         <p>Octagon can be extended by plugins <x-note>existing or new ones</x-note></p>
 
-    <h2 id="jbugzilla">JBugzilla</h2>
-
-    Status: <span class="status_almost_nothing_implemented"></span>
-
+        
     <h2 id="power-framework">Power Framework</h2>
     Status: <span class="status_partially_implemented"></span>
     <p><b>Power Framework</b> is collection of multi-purpose libraries: collections, json, time, randomness, IO, web, XML, GUI + much more</p>
@@ -256,6 +259,12 @@
     <p>A tool versioning database schema.</p>
 
 
+    <h2 id="jbugzilla">JBugzilla</h2>
+
+    Status: <span class="status_abandoned"></span>
+
+    <br>JBugzilla is Bugzilla written in Java programming language<br>
+    <img src="https://wiki.nanoboot.org/Products/JBugzilla/Screenshots?action=AttachFile&do=get&target=jbugzilla_screenshot.jpg" /></a>
 
 
 
