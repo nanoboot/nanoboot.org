@@ -167,6 +167,8 @@ h1 {
     /*color:#0000CC;*/
     margin-top:10px;
     margin-bottom:20px;
+    /*background: #6633ff;
+    color:white;*/
 
 }
 h2 {
@@ -179,6 +181,12 @@ h3 {
     /*border-bottom:2px solid orange;*/
     /*color:#660000;*/
 }
+
+/*
+h1, h2, h3, h4, h5, h6 {
+text-align: center;
+}
+*/
 
 body {
     max-width:1200px;
