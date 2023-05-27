@@ -44,7 +44,7 @@ pipeline
 
     		          master)
                         echo Branch $BRANCH_NAME is supported. Continuing.
-                        rsync --exclude '.git/*' -vaz ./ $$WWW_ROOT_DIR
+                        rsync --exclude '.git/*' -vaz ./ $WWW_ROOT_DIR
                         echo "Deployment of documentation was successful. Env=production"
         		        ;;
     		        
