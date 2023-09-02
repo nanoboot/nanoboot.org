@@ -1,192 +1,466 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Home - Nanoboot Project</title>
-<meta charset="utf-8">
+    <head>
+        <title>Home - Nanoboot Project</title>
+        <meta charset="utf-8">
 
-<link rel="icon" type="image/x-icon" href="favicon.ico" sizes="16x16">
-<link rel="stylesheet" type="text/css" href="nanoboot.css">
-<script src="nanoboot.js"></script>
+        <link rel="icon" type="image/x-icon" href="favicon.ico" sizes="16x16">
+        <link rel="stylesheet" type="text/css" href="nanoboot.css">
+        <script src="nanoboot.js"></script>
 
-<style>
-.div_sw {
-/*background:rgb(245,245,245);*/
-padding: 5px;
-margin-bottom:30px;
-/*border:4px solid rgb(235,235,235);*/
-}
+        <style>
+            .div_sw {
+                /*background:rgb(245,245,245);*/
+                padding: 8px;
+                margin-bottom:30px;
+                border:3px solid rgb(235,235,235);
+            }
 
-.div_sw img {
-max-width:90%;
-/*border:4px solid #EEE;*/
-padding:20px;
-padding-left:5px;
-background:white;
-}
-.div_sw h3 {
-    margin-top:5px;
-    padding-bottom:10px;
-}
-.div_sw video {
-max-width:600px;
-}
-
-
-@media screen and (max-width: 800px), (pointer:none), (pointer:coarse) {
-.div_sw video {
-max-width:90%;
-}
-}
-</style>
-
-<style>
-
-.li_with_bottom_margin li {
-margin-top:8px;
-margin-bottom:8px;
-}
-
-x-a, x-b, x-c, x-d, x-e, x-f, x-g, x-h {
-font-weight:bold;
-display:inline;
-padding:2px;
-}
-x-a {
-background:red;
-color:white;
-}
-x-b {
-    background:#66ff00;
-}
-
-x-c {
-background:blue;
-color:white;
-}
-
-x-d {
-background:brown;
-color:white;
-}
-
-x-e {
-background: yellow;
-}
-
-x-f {
-    background: #33ffff;
-}
-
-x-g {
-    background: #ff00ff;
-}
-
-x-h {
-    background: #999999;
-}
+            .div_sw img {
+                max-width:90%;
+                /*border:4px solid #EEE;*/
+                padding:20px;
+                padding-left:5px;
+                background:white;
+            }
+            .div_sw h3 {
+                margin-top:5px;
+                padding-bottom:10px;
+            }
+            .div_sw video {
+                max-width:600px;
+            }
 
 
-</style>
+            @media screen and (max-width: 800px), (pointer:none), (pointer:coarse) {
+                .div_sw video {
+                    max-width:90%;
+                }
+            }
+        </style>
 
-</head>
+        <style>
 
-<body onload="init()">
+            .li_with_bottom_margin li {
+                margin-top:8px;
+                margin-bottom:8px;
+            }
 
-<div id="nanoboot_banner"><a href="index.html" target="_parent">Nanoboot</a> Project</div>
+            x-a, x-b, x-c, x-d, x-e, x-f, x-g, x-h {
+                font-weight:bold;
+                display:inline;
+                padding:2px;
+            }
+            x-a {
+                background:red;
+                color:white;
+            }
+            x-b {
+                background:#66ff00;
+            }
 
-<ul id="menu">
-<li class="menu_li_current_item"><a href="index.html" target="_parent" style="">Home</a></li>
-<li><a href="about.html" target="_parent">About</a></li>
-<li><a href="software.html" target="_parent">Software</a></li>
-<li><a href="downloads.html" target="_parent">Downloads</a></li>
-<li><a href="documentation.html" target="_parent">Documentation</a></li>
-<li><a href="contribute.html" target="_parent">Contribute</a></li>
-<li><a href="support.html" target="_parent">Support</a></li>
-</ul>
+            x-c {
+                background:blue;
+                color:white;
+            }
 
-<!--
-<div class="banner1"><b>News:</b> <x-note>2023-03-18</x-note>: <b>Color Shapes</b> <x-note>game</x-note> and <b>Power Framework</b> <x-note>library</x-note> were published. See: <a href="https://github.com/nanoboot">more</a></div>
--->
+            x-d {
+                background:brown;
+                color:white;
+            }
+
+            x-e {
+                background: yellow;
+            }
+
+            x-f {
+                background: #33ffff;
+            }
+
+            x-g {
+                background: #ff00ff;
+            }
+
+            x-h {
+                background: #999999;
+            }
+
+            .status_not_yet_developed,
+            .status_almost_nothing_implemented,
+            .status_abandoned,
+            .status_under_progress,
+            .status_partially_implemented,
+            .status_implemented,
+            .status_obsolete
+            {
+                border:1px solid black;
+                font-weight:bold;
+                padding:0px;
+                font-size:85%;
+                line-break: strict;
+            }
+
+            .status_implemented::after {
+                content: "IMPLEMENTED\A";
+                white-space: pre;
+                background: rgb(0,255,0);
+            }
 
 
-<div id="content">
+            .status_partially_implemented::after {
+                content: "PARTIALLY IMPLEMENTED\A";
+                white-space: pre;
+                background: rgb(0,255,0);
+            }
 
-<h1>Nanoboot</h1>
+            .status_almost_nothing_implemented::after {
+                content: "ALMOST NOTHING IMPLEMENTED\A";
+                white-space: pre;
+                background: #ccffff;
+            }
+            .status_abandoned::after {
+                content: "ABANDONED\A";
+                white-space: pre;
+                background: #99ffff;
+            }
 
-<h2>What is Nanoboot</h2>
 
-<b>Nanoboot</b> is collection of free software <x-note>mostly written in Java programming language</x-note>.
+            .status_obsolete::after {
+                content: "OBSOLETE\A";
+                white-space: pre;
+                color:white;
+                background: grey;
+            }
 
-            <ul>
-                <li>licenced under GPL or LGPL licences <x-note>we wish sharing this software</x-note></li>
-                <li>gratis <x-note>price is 0</x-note></li>
-                <li>your freedom is respected</li>
+            .status_under_progress::after {
+                content: "UNDER PROGRESS\A";
+                white-space: pre;
+                background: yellow;
+            }
+
+
+            .status_not_yet_developed::after {
+                content: "NOT YET DEVELOPED\A";
+                white-space: pre;
+                background: #ff6666;
+                color: white;
+            }
+
+            h3 {
+                margin-bottom:5px;
+            }
+            #a0818a79f-fd48-4410-94dd-5f5732bf8f46 + h3, .div_sw + h3 {
+                background: #CCE5FF;
+                /*                #99CCFF;*/
+                padding-bottom:0;
+                margin-bottom:0;
+                padding:5px;
+            }
+        </style>
+
+    </head>
+
+    <body onload="init()">
+
+        <div id="nanoboot_banner"><a href="index.html" target="_parent">Nanoboot</a> Project</div>
+
+        <ul id="menu">
+            <li class="menu_li_current_item"><a href="index.html" target="_parent" style="">Home</a></li>
+            <li><a href="about.html" target="_parent">About</a></li>
+
+            <li><a href="downloads.html" target="_parent">Downloads</a></li>
+            <li><a href="documentation.html" target="_parent">Documentation</a></li>
+            <li><a href="contribute.html" target="_parent">Contribute</a></li>
+            <li><a href="links.html" target="_parent">Links</a></li>
+        </ul>
+
+        <!--
+        <div class="banner1"><b>News:</b> <x-note>2023-03-18</x-note>: <b>Color Shapes</b> <x-note>game</x-note> and <b>Power Framework</b> <x-note>library</x-note> were published. See: <a href="https://github.com/nanoboot">more</a></div>
+        -->
+
+
+        <div id="content">
+
+            <h1>Home</h1>
+
+            <b>Nanoboot</b> is collection of <b>free</b> software mostly written in <b>Java</b> programming language.
+
+            <ul style="font-size:80%;margin-top:5px;">
+                <li>This <b>software</b> is mostly licenced under <b>GPL</b> or <b>LGPL</b> licences <x-note>we wish sharing this software</x-note>, <b>gratis</b> <x-note>price is 0</x-note>, your <b>freedom</b> is respected</li>
+
+                <li><b>Nanoboot Project</b> was publicly announced on <b>2nd December 2022</b> <x-note>but software development started already in January 2016</x-note>.</li>
+
+                <li>
+                    You can read the <a href="glossary.html">Glossary</a> with the list of <b>terms</b> used across the Nanoboot project.
+                </li>
             </ul>
 
-Let see some software examples:
+            <b>What we do:</b>
+            <ul style="font-size:80%;margin-top:5px;">
+                <li>Games</li>
+                <li>Web applications <x-note>Nanodata, Octagon, Color Shapes Archive</x-note></li>
+                <li>Desktop applications</li>
+                <li>Tools <x-note>backups, FTP</x-note>
+                <li>Tools for programmers <x-note>DB schema versioning, documentation generator</x-note></li>
+                <li>Archiving web pages related to computer game <b>Color linez</b> - <a href="https://colorshapesarchive.nanoboot.org">colorshapesarchive.nanoboot.org</a> and <a href="https://archive.nanoboot.org">archive.nanoboot.org</a></li>
+                <li>Encyclopedia - <a href="https://nanodata.nanoboot.org">nanodata.nanoboot.org</a></li>
+            </ul>
 
-<h2>New to Nanoboot?</h2>
+            <h2>Our software</h2>
 
-Please, read the <a href="glossary.html">Glossary</a> with the list of terms intended for everyone with the goal to understand them at least at the basic level.
+            <p style="font-size:80%;margin:0;">Complete list of projects: <a href="https://docs.nanoboot.org/nanoboot-general-documentation/latest/en-US/html//Nanoboot_projects/index.html">https://docs.nanoboot.org/nanoboot-general-documentation/latest/en-US/html//Nanoboot_projects/index.html</a></p>
+            <p style="font-size:80%;margin:0;">Complete list of software: <a href="https://docs.nanoboot.org/nanoboot-general-documentation/latest/en-US/html//Nanoboot_software/index.html">https://docs.nanoboot.org/nanoboot-general-documentation/latest/en-US/html//Nanoboot_software/index.html</a></p>
+            <x-note style="font-size:80%;margin:0;">software vs. project: means mostly the same</x-note>
 
-<h2>Color Shapes - game</h2>
+            <span id="a0818a79f-fd48-4410-94dd-5f5732bf8f46"></span>
+            <h3 id="color-shapes-desktop">Color Shapes Desktop</h3>
+            <div class="div_sw">
+                Status: <span class="status_implemented"></span>
+                <ul style="font-size:80%;margin-top:5px;">
+                    <li>A logic game, the main software developed by Nanoboot.</li>
+                    <li>For PC (Windows, Linux, MacOS)</li>
+                    <li>You need <b>Java 8</b> to run <b>Color Shapes Desktop 1.0.0</b> <x-note>Color Shapes Desktop 2.0.0 is still in development and runs on Java 19</x-note></li>
+                    <li>A never-ending game, fun forever. <a href="software.html#color-shapes">more information</a></li>
+                </ul>
+                <a href="https://files.nanoboot.org/docs.nanoboot.org/color-shapes-desktop.docs/screenshots/color-shapes-1.0.0.jpg" target="_blank"><img src="https://files.nanoboot.org/docs.nanoboot.org/color-shapes-desktop.docs/screenshots/color-shapes-1.0.0.jpg" height="25%" width="25%"></a><br>
+                <a href="https://files.nanoboot.org/docs.nanoboot.org/color-shapes-desktop.docs/screenshots/color-shapes-1.0.0.jpg" target="_blank">More screenshots.</a>
+                <br>
 
-<div class="div_sw">
+                <video controls loop muted width="100">
+                    <source src="videos/Color_Shapes.mp4" type="video/mp4">
+                    This browser does not display the video tag. Video Color_Shapes.mp4 could not be played.
+                </video>
+                <!--autoplay-->
 
-Play a never-ending game, have fun forever. <a href="software.html#color-shapes">more information</a><br><br>
+            </div>
 
-<video controls loop muted>
-  <source src="videos/Color_Shapes.mp4" type="video/mp4">
-  This browser does not display the video tag. Video Color_Shapes.mp4 could not be played.
-</video>
-<!--autoplay-->
+            <h3>Color Shapes Engine</h3>
+            <div class="div_sw">
+                Status: <span class="status_under_progress"></span>
 
-</div>
+                This is a Java library, where is hold the core logic of game "Color Shapes".
+
+            </div>
+            <h3>Color Shapes Server</h3>
+            <div class="div_sw">
+                Status: <span class="status_not_yet_developed"></span>
+            </div>
+            Color Shapes as a server, which you can access via REST api
+            <h3>Color Shapes Client</h3>
+            <div class="div_sw">
+                Status: <span class="status_not_yet_developed"></span>
+
+                Java library used to connect to "Color Shapes" server
+            </div>
+            <h3>Color Shapes Web</h3>
+            <div class="div_sw">
+
+                Status: <span class="status_not_yet_developed"></span>
+
+                Color Shapes running in web browser
+
+            </div>
+            <h3>Color linez Desktop</h3>
+            <div class="div_sw">
+                Status: <span class="status_not_yet_developed"></span>
+
+                Classic game "Color linez" implemented in Java ("the same user interface")
+            </div>
+            <h3>Color linez Web</h3>
+            <div class="div_sw">
+
+                Status: <span class="status_not_yet_developed"></span>
+
+                Classic game "Color linez" running in web browser
+            </div>
+
+            <h3 id="octagon">Octagon</h3>
+            <div class="div_sw">
+                Status: <span class="status_partially_implemented"></span>
+                <p>Multi-purpose system - documentation, issue tracking, encyclopedia + much more </p>
+                <p>Octagon can be extended by plugins <x-note>existing or new ones</x-note></p>
+                <img src="https://files.nanoboot.org/docs.nanoboot.org/octagon/screenshots/octagon_screenshot2.jpg" />
+            </div>
+
+            <h3>Power Framework</h3>
+            <div class="div_sw">
+
+                Status: <span class="status_partially_implemented"></span>
+                <p><b>Power Framework</b> is collection of (over 20) multi-purpose libraries.</p>
+                <ul>
+                    <li>
+                        Features: Collections, JSON, time, randomness, IO, web, XML, GUI + much more
+                    </li>
+                </ul>
+
+            </div><h3>Power Core</h3>
+            <div class="div_sw">
+                Status: <span class="status_implemented"></span>
+            </div><h3>Power Text</h3>
+            <div class="div_sw">
+                Status: <span class="status_implemented"></span>
+            </div><h3>Power Random</h3>
+            <div class="div_sw">
+                Status: <span class="status_implemented"></span>
+            </div><h3>Power Utils</h3>
+            <div class="div_sw">
+                Status: <span class="status_implemented"></span>
+            </div><h3>Power Collections</h3>
+            <div class="div_sw">
+                Status: <span class="status_implemented"></span>
+            </div><h3>Power Json</h3>
+            <div class="div_sw">
+                Status: <span class="status_implemented"></span>
+            </div><h3>Power Time</h3>
+            <div class="div_sw">
+                Status: <span class="status_implemented"></span>
+            </div><h3>Power Log</h3>
+            <div class="div_sw">
+                Status: <span class="status_obsolete"></span>
+            </div><h3>Power IO</h3>
+            <div class="div_sw">
+                Status: <span class="status_not_yet_developed"></span>
+            </div><h3>Power Web</h3>
+            <div class="div_sw">
+                Status: <span class="status_implemented"></span>
+            </div><h3>Power Wiki</h3>
+            <div class="div_sw">
+                Status: <span class="status_not_yet_developed"></span>
+                wiki content engine
+            </div><h3>Power Container</h3>
+            <div class="div_sw">
+
+                Status: <span class="status_not_yet_developed"></span>
+                dependency management
+            </div><h3>Power Redmond</h3>
+            <div class="div_sw">
+
+                Status: <span class="status_not_yet_developed"></span>
+                intended to develop applications with Windows 95 like GUI
+            </div><h3>Power Shark</h3> 
+            <div class="div_sw">
+
+                Status: <span class="status_not_yet_developed"></span>
+                programming language
+            </div><h3>Power Sound</h3>
+            <div class="div_sw">
+
+                Status: <span class="status_not_yet_developed"></span>
+                add sound to your application
+            </div><h3>Power Stat</h3> 
+            <div class="div_sw">
+
+                Status: <span class="status_not_yet_developed"></span>
+                statistics tools
+            </div><h3>Power SQL</h3>
+            <div class="div_sw">
+
+                Status: <span class="status_not_yet_developed"></span>
+                create SQL statements dynamically
+            </div><h3>Power DB</h3>
+            <div class="div_sw">
+                Status: <span class="status_not_yet_developed"></span>
+            </div><h3>Power Persistence</h3>
+            <div class="div_sw">
+                Status: <span class="status_not_yet_developed"></span>
+            </div><h3>Power SVG</h3>            <div class="div_sw">
+
+                Status: <span class="status_not_yet_developed"></span> create SVG graphics in Java
+            </div><h3>Power View</h3>            <div class="div_sw">
 
 
-<h2>Power Framework - over 20 Java libraries</h2>
-<div class="div_sw">
-Develop amazing apps with this collection of Java libraries <a href="software.html#power-framework">more information</a><br>
-<ul>
-<li>
-Features: JSON, time, randomness, IO, web, XML, GUI + much more
-</li>
-</ul>
-</div>
+                Status: <span class="status_implemented"></span>
 
-<h2>DB Migration - DB schema management</h2>
-<div class="div_sw">
-Create database schema changesets <a href="software.html#db-migration">more information</a><br><br>
+                create Desktop applications in Java with a minimalist user interface
+            </div><h3>Power XML</h3><div class="div_sw">
+                Status: <span class="status_implemented"></span>
+                create XML documents in Java
+            </div><h3>Power Reflection</h3><div class="div_sw">
 
-<a href="software.html#db-migration"><img src="https://files.nanoboot.org/docs.nanoboot.org/db-migration/db-migration_screenshot.jpg" /></a>
-<!--<a href="software/db-migration/index.html">More screenshots</a>-->
-</div>
+                Status: <span class="status_implemented"></span>
+                use Java reflection
+            </div><h3>Power Mail</h3> <div class="div_sw">
 
-<h2>Octagon - knowledge assistant</h2>
-<div class="div_sw">
-    Organize your stuff! <a href="software.html#octagon">more information</a><br>
+                Status: <span class="status_implemented"></span>
+                send e-mails in Java
+            </div>
+            <h3>Power Blockchain</h3> <div class="div_sw">
 
-<div class="danger_zone">Development progress: 20% only. Help needed.</div>
+                Status: <span class="status_implemented"></span>
+                use blockchain in Java
+            </div><h3>Power Security</h3><div class="div_sw">
+                Status: <span class="status_not_yet_developed"></span>
+            </div><h3>Power Net</h3><div class="div_sw">
+                Status: <span class="status_not_yet_developed"></span>
+                connect to Internet
+            </div><h3>Power Concurrency</h3><div class="div_sw">
+                Status: <span class="status_not_yet_developed"></span>
+            </div><h3>Power English</h3><div class="div_sw">
 
-<br>
+                Status: <span class="status_not_yet_developed"></span>
+                generate English sentences
+            </div><h3>Power Java</h3><div class="div_sw">
 
-<img src="https://files.nanoboot.org/docs.nanoboot.org/octagon/screenshots/octagon_screenshot2.jpg" /></a>
+                Status: <span class="status_not_yet_developed"></span>
+                generate dynamically Java code
+            </div><h3>Power Math</h3><div class="div_sw">
+                Status: <span class="status_not_yet_developed"></span>
+            </div><h3>Power Console</h3><div class="div_sw">
+                Status: <span class="status_not_yet_developed"></span>
+            </div><h3>Power Ascii</h3><div class="div_sw">
 
-</div>
+                Status: <span class="status_not_yet_developed"></span>create Ascii art
+            </div><h3>Power Cash</h3><div class="div_sw">
+
+                Status: <span class="status_not_yet_developed"></span>
+                a cryptocurrency prototype
+            </div>
+            <h3>Power AI</h3><div class="div_sw">
+
+                Status: <span class="status_not_yet_developed"></span>use artificial intelligence
+            </div>
+
+            <h3>DB Migration</h3>
+            <div class="div_sw">
+                Status: <span class="status_implemented"></span>
+                <br>
+                <p>A tool versioning database schema.</p>
+                <br>
+                Create database schema changesets <a href="software.html#db-migration">more information</a><br><br>
+
+                <a href="software.html#db-migration"><img src="https://files.nanoboot.org/docs.nanoboot.org/db-migration/db-migration_screenshot.jpg" /></a>
+                <!--<a href="software/db-migration/index.html">More screenshots</a>-->
+            </div>
+
+            <h3 id="jbugzilla">JBugzilla</h3><div class="div_sw">
+
+                Status: <span class="status_abandoned"></span>
+
+                <br>JBugzilla is Bugzilla written in Java programming language<br>
+                <img src="https://files.nanoboot.org/docs.nanoboot.org/jbugzilla/jbugzilla_screenshot.jpg" />
+            </div>
 
 
+            <h3>Simulife</h3>
+            <div class="div_sw">
 
-</div>
+                Status: <span class="status_not_yet_developed"></span>
 
-<div id="footer">
-    <div class="footer_column_left">Copyright © 2022-2023 Robert Vokac</div>
-    <div class="footer_column_right">
-    
-    <a href="https://en.wikipedia.org/wiki/IPv6" target="_blank" title="IPv6 supported">IPv6 supported</a>
-    
-    <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" title="Content available under a Creative Commons Attribution-ShareAlike 4.0 International License."><img alt="Content available under a Creative Commons Attribution-ShareAlike 4.0 International License." style="border-width:0" src="images/creative_commons_attribution_share_alike_4.0_international_licence_88x31.png" /></a></div>
-</div>
-</body>
+                <p>Screen-oriented game engine intended for web browser</p>
+            </div>
+
+
+        </div>
+
+        <div id="footer">
+            <div class="footer_column_left">Copyright © 2022-2023 Robert Vokac</div>
+            <div class="footer_column_right">
+
+                <a href="https://en.wikipedia.org/wiki/IPv6" target="_blank" title="IPv6 supported">IPv6 supported</a>
+
+                <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" title="Content available under a Creative Commons Attribution-ShareAlike 4.0 International License."><img alt="Content available under a Creative Commons Attribution-ShareAlike 4.0 International License." style="border-width:0" src="images/creative_commons_attribution_share_alike_4.0_international_licence_88x31.png" /></a></div>
+        </div>
+    </body>
 
 </html>
 

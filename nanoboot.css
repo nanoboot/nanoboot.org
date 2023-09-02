@@ -210,6 +210,7 @@ x-note::after {
 }
 x-note {
     color:grey;
+/*    font-size:80%;*/
 }
 
 pre {
@@ -323,4 +324,9 @@ color:#DF7000;
     margin-top:10px;
     margin-bottom:0px;
     width:500px;
+}
+
+b, x-bold {
+	font-weight: bold;
+	color: #CC6600;
 }
