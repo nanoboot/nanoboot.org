@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Home - Nanoboot Project</title>
+        <title>Power Framework - Nanoboot Project</title>
         <meta charset="utf-8">
 
         <link rel="icon" type="image/x-icon" href="favicon.ico" sizes="16x16">
@@ -183,147 +183,159 @@
 
         <div id="content">
 
-            <h1>Home</h1>
+            <h1>Power Framework</h1>
 
-            <b>Nanoboot</b> is collection of <b>free</b> software mostly written in <b>Java</b> programming language.
+            <b>Power Framework</b> is collection of <b>multi-purpose</b> libraries written in <b>Java</b> programming language.
 
-            <ul style="font-size:80%;margin-top:5px;">
-                <li>This <b>software</b> is mostly licenced under <b>GPL</b> or <b>LGPL</b> licences <x-note>we wish sharing this software</x-note>, <b>gratis</b> <x-note>price is 0</x-note>, your <b>freedom</b> is respected</li>
-
-                <li><b>Nanoboot Project</b> was publicly announced on <b>2nd December 2022</b> <x-note>but software development started already in January 2016</x-note>.</li>
-
-                <li>
-                    You can read the <a href="glossary.html">Glossary</a> with the list of <b>terms</b> used across the Nanoboot project.
-                </li>
-            </ul>
-
-            <b>What we do:</b>
-            <ul style="font-size:80%;margin-top:5px;">
-                <li>Games</li>
-                <li>Web applications <x-note>Nanodata, Octagon, Color Shapes Archive</x-note></li>
-                <li>Desktop applications</li>
-                <li>Tools <x-note>backups, FTP</x-note>
-                <li>Tools for programmers <x-note>DB schema versioning, documentation generator</x-note></li>
-                <li>Archiving web pages related to computer game <b>Color linez</b> - <a href="https://colorshapesarchive.nanoboot.org">colorshapesarchive.nanoboot.org</a> and <a href="https://archive.nanoboot.org">archive.nanoboot.org</a></li>
-                <li>Encyclopedia - <a href="https://nanodata.nanoboot.org">nanodata.nanoboot.org</a></li>
-            </ul>
-
-            <h2>Our software</h2>
-
-            <p style="font-size:80%;margin:0;">Complete list of Nanoboot packages: <a href="https://docs.nanoboot.org/nanoboot-general-documentation/latest/en-US/html//Nanoboot_packages/index.html">https://docs.nanoboot.org/nanoboot-general-documentation/latest/en-US/html/Nanoboot_projects/index.html</a></p>
-
-            <span id="a0818a79f-fd48-4410-94dd-5f5732bf8f46"></span>
-            <h3 id="color-shapes-desktop">Color Shapes Desktop</h3>
-            <div class="div_sw">
-                Status: <span class="status_implemented"></span>
-                <ul style="font-size:80%;margin-top:5px;">
-                    <li>A logic game, the main software developed by Nanoboot.</li>
-                    <li>For PC (Windows, Linux, MacOS)</li>
-                    <li>You need <b>Java 8</b> to run <b>Color Shapes Desktop 1.0.0</b> <x-note>Color Shapes Desktop 2.0.0 is still in development and runs on Java 19</x-note></li>
-                    <li>A never-ending game, fun forever. <a href="software.html#color-shapes">more information</a></li>
-                </ul>
-                <a href="https://files.nanoboot.org/docs.nanoboot.org/color-shapes-desktop.docs/screenshots/color-shapes-1.0.0.jpg" target="_blank"><img src="https://files.nanoboot.org/docs.nanoboot.org/color-shapes-desktop.docs/screenshots/color-shapes-1.0.0.jpg" width="400"></a><br>
-                <a href="https://files.nanoboot.org/docs.nanoboot.org/color-shapes-desktop.docs/screenshots/color-shapes-1.0.0.jpg" target="_blank">More screenshots.</a>
-                <br>
-
-                <video controls loop muted width="400">
-                    <source src="videos/Color_Shapes.mp4" type="video/mp4">
-                    This browser does not display the video tag. Video Color_Shapes.mp4 could not be played.
-                </video>
-                <!--autoplay-->
-
-            </div>
-
-            <h3>Color Shapes Engine</h3>
-            <div class="div_sw">
-                Status: <span class="status_under_progress"></span>
-
-                This is a Java library, where is hold the core logic of game "Color Shapes".
-
-            </div>
+            <h2>Modules</h2>
             
-            <h3 id="octagon">Octagon</h3>
-            <div class="div_sw">
-                Status: <span class="status_partially_implemented"></span>
-                <p>Multi-purpose system - documentation, issue tracking, encyclopedia + much more </p>
-                <p>Octagon can be extended by plugins <x-note>existing or new ones</x-note></p>
-                <img src="https://files.nanoboot.org/docs.nanoboot.org/octagon/screenshots/octagon_screenshot2.jpg" />
-            </div>
-
-            <h3>Power Framework</h3>
-            <div class="div_sw">
-
-                Status: <span class="status_partially_implemented"></span>
-                <p><b>Power Framework</b> is collection of over 20 multi-purpose libraries. <a href="power-framework.html">More info</a></p>
-                <ul>
-                    <li>
-                        Features: Collections, JSON, time, randomness, IO, web, XML, GUI + much more
-                    </li>
-                </ul>
-
-            </div>
-            <h3>DB Migration</h3>
+            <span id="a0818a79f-fd48-4410-94dd-5f5732bf8f47"></span>
+            
+            <h3>Power Core</h3>
             <div class="div_sw">
                 Status: <span class="status_implemented"></span>
-                <br>
-                <p>A tool versioning database schema.</p>
-                <br>
-                Create database schema changesets <a href="software.html#db-migration">more information</a><br><br>
-
-                <a href="software.html#db-migration"><img src="https://files.nanoboot.org/docs.nanoboot.org/db-migration/db-migration_screenshot.jpg" /></a>
-                <!--<a href="software/db-migration/index.html">More screenshots</a>-->
+            </div><h3>Power Text</h3>
+            <div class="div_sw">
+                Status: <span class="status_implemented"></span>
+            </div><h3>Power Random</h3>
+            <div class="div_sw">
+                Status: <span class="status_implemented"></span>
+            </div><h3>Power Utils</h3>
+            <div class="div_sw">
+                Status: <span class="status_implemented"></span>
+            </div><h3>Power Collections</h3>
+            <div class="div_sw">
+                Status: <span class="status_implemented"></span>
+            </div><h3>Power Json</h3>
+            <div class="div_sw">
+                Status: <span class="status_implemented"></span>
+            </div><h3>Power Time</h3>
+            <div class="div_sw">
+                Status: <span class="status_implemented"></span>
+            </div><h3>Power Log</h3>
+            <div class="div_sw">
+                Status: <span class="status_obsolete"></span>
             </div>
+            <h3>Power Web</h3>
+            <div class="div_sw">
+                Status: <span class="status_implemented"></span>
+            </div><h3>Power View</h3>            <div class="div_sw">
+
+                Status: <span class="status_implemented"></span>
+
+                create Desktop applications in Java with a minimalist user interface
+            </div><h3>Power XML</h3><div class="div_sw">
+                Status: <span class="status_implemented"></span>
+                create XML documents in Java
+            </div><h3>Power Reflection</h3><div class="div_sw">
+
+                Status: <span class="status_implemented"></span>
+                use Java reflection
+            </div><h3>Power Mail</h3> <div class="div_sw">
+
+                Status: <span class="status_implemented"></span>
+                send e-mails in Java
+            </div>
+            <h3>Power Blockchain</h3> <div class="div_sw">
+
+                Status: <span class="status_implemented"></span>
+                use blockchain in Java
+            </div>
+       
 
             <h2>Future software</h2>
             
             <span id="a0818a79f-fd48-4410-94dd-5f5732bf8f47"></span>
+        
+            <h3>Power IO</h3>
+            <div class="div_sw">
+                Status: <span class="status_not_yet_developed"></span>
+            </div>
             
-            <h3>Color Shapes Server</h3>
+            <h3>Power Wiki</h3>
             <div class="div_sw">
                 Status: <span class="status_not_yet_developed"></span>
+                wiki content engine
+            </div><h3>Power Container</h3>
+            <div class="div_sw">
+
+                Status: <span class="status_not_yet_developed"></span>
+                dependency management
+            </div><h3>Power Redmond</h3>
+            <div class="div_sw">
+
+                Status: <span class="status_not_yet_developed"></span>
+                intended to develop applications with Windows 95 like GUI
+            </div><h3>Power Shark</h3> 
+            <div class="div_sw">
+
+                Status: <span class="status_not_yet_developed"></span>
+                programming language
+            </div><h3>Power Sound</h3>
+            <div class="div_sw">
+
+                Status: <span class="status_not_yet_developed"></span>
+                add sound to your application
+            </div><h3>Power Stat</h3> 
+            <div class="div_sw">
+
+                Status: <span class="status_not_yet_developed"></span>
+                statistics tools
+            </div><h3>Power SQL</h3>
+            <div class="div_sw">
+
+                Status: <span class="status_not_yet_developed"></span>
+                create SQL statements dynamically
+            </div><h3>Power DB</h3>
+            <div class="div_sw">
+                Status: <span class="status_not_yet_developed"></span>
+            </div><h3>Power Persistence</h3>
+            <div class="div_sw">
+                Status: <span class="status_not_yet_developed"></span>
+            </div><h3>Power SVG</h3>            <div class="div_sw">
+
+                Status: <span class="status_not_yet_developed"></span> create SVG graphics in Java
             </div>
-            Color Shapes as a server, which you can access via REST api
-            <h3>Color Shapes Client</h3>
-            <div class="div_sw">
+            
+            <h3>Power Security</h3><div class="div_sw">
                 Status: <span class="status_not_yet_developed"></span>
-
-                Java library used to connect to "Color Shapes" server
+            </div><h3>Power Net</h3><div class="div_sw">
+                Status: <span class="status_not_yet_developed"></span>
+                connect to Internet
             </div>
-            <h3>Color Shapes Web</h3>
-            <div class="div_sw">
+
+            <h3>Power Concurrency</h3><div class="div_sw">
+                Status: <span class="status_not_yet_developed"></span>
+            </div><h3>Power English</h3><div class="div_sw">
 
                 Status: <span class="status_not_yet_developed"></span>
+                generate English sentences
+            </div><h3>Power Java</h3><div class="div_sw">
 
-                Color Shapes running in web browser
+                Status: <span class="status_not_yet_developed"></span>
+                generate dynamically Java code
+            </div><h3>Power Math</h3><div class="div_sw">
+                Status: <span class="status_not_yet_developed"></span>
+            </div><h3>Power Console</h3><div class="div_sw">
+                Status: <span class="status_not_yet_developed"></span>
+            </div><h3>Power Ascii</h3><div class="div_sw">
 
+                Status: <span class="status_not_yet_developed"></span>create Ascii art
+            </div><h3>Power Cash</h3><div class="div_sw">
+
+                Status: <span class="status_not_yet_developed"></span>
+                a cryptocurrency prototype
             </div>
-            <h3>Color linez Desktop</h3>
-            <div class="div_sw">
-                Status: <span class="status_not_yet_developed"></span>
+            <h3>Power AI</h3><div class="div_sw">
 
-                Classic game "Color linez" implemented in Java ("the same user interface")
-            </div>
-            <h3>Color linez Web</h3>
-            <div class="div_sw">
-
-                Status: <span class="status_not_yet_developed"></span>
-
-                Classic game "Color linez" running in web browser
-            </div>
-           
-            <h3>Simulife</h3>
-            <div class="div_sw">
-
-                Status: <span class="status_not_yet_developed"></span>
-
-                <p>Screen-oriented game engine intended for web browser</p>
+                Status: <span class="status_not_yet_developed"></span>use artificial intelligence
             </div>
 
 
         </div>
 
         <div id="footer">
-            <div class="footer_column_left">Copyright © 2022-2023 Robert Vokac</div>
+            <div class="footer_column_left">Copyright © 2023-2023 Robert Vokac</div>
             <div class="footer_column_right">
 
                 <a href="https://en.wikipedia.org/wiki/IPv6" target="_blank" title="IPv6 supported">IPv6 supported</a>
