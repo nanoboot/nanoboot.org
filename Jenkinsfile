@@ -47,13 +47,14 @@ pipeline
                         rsync --exclude '.git/*' -vaz ./ $WWW_ROOT_DIR
                         echo "Deployment of documentation was successful. Env=production"
         		        ;;
-: '    		        
+  
       		          develop | jenkins)
-        		        echo Branch $BRANCH_NAME is supported. Continuing.
+        		        echo Branch $BRANCH_NAME is not supported. Exiting.
+        		        exit.
                         rsync --exclude '.git/*' -vaz ./ $WWW_TEST_ROOT_DIR
                         echo "Deployment of documentation was successful. Env=test"
         		        ;;
-'
+
       		        *)
         		        echo Branch $BRANCH_NAME is not supported. A failure happened. Exiting.
                         exit 1
